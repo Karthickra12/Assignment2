@@ -2,13 +2,14 @@ package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import testcases.TestDataStore;
 
 public class Loginpage extends Basepage {
 
-	
+	Actions act;
 	public Loginpage(WebDriver driver) {
 		super(driver);
 	}
@@ -34,8 +35,9 @@ public class Loginpage extends Basepage {
 		registerbtn.click();
 	}
 
-	public void logininputenter() {
+	public String logininputenter() {
 		loginmailinputfield.sendKeys(TestDataStore.registerdemailid);
+		return TestDataStore.registerdemailid;
 	}
 	
 	public void logininputenterpass(String password) {
@@ -47,7 +49,8 @@ public class Loginpage extends Basepage {
 	}
 	
 	public void logoutbtnclick1() {
-		homelogoutbtn.click();
+		act.moveToElement(homelogoutbtn).click().perform();
+		//homelogoutbtn.click();
 		logoutcontinueclick.click();
 		System.out.println("Logout Was Successful");
 	}

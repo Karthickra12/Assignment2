@@ -3,13 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Searchtests">
+      <class name="testcases.Registertests">
         <methods>
-          <include name="searchinput"/>
+          <include name="registertests"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.Registertests -->
+      <class name="testcases.logintests">
+        <methods>
+          <include name="logintest"/>
           <include name="Teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcases.Searchtests -->
+      </class> <!-- testcases.logintests -->
+      <class name="testcases.Logouttests">
+        <methods>
+          <include name="logouttests"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.Logouttests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

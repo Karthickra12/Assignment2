@@ -10,14 +10,27 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.Logouttests -->
+      <class name="testcases.Registertests">
+        <methods>
+          <include name="registertests"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.Registertests -->
       <class name="testcases.Searchtests">
         <methods>
           <include name="searchinput"/>
           <include name="Teardown"/>
           <include name="setup"/>
-          <include name="logout"/>
         </methods>
       </class> <!-- testcases.Searchtests -->
+      <class name="testcases.logintests">
+        <methods>
+          <include name="logintest"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.logintests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

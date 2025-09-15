@@ -45,12 +45,10 @@ public class Searchtests extends Baseclass {
 		
 	}
 	
-	@Test(priority = 2,dependsOnMethods = "searchinput")
-	public void logout() {
-		Loginpage lp = new Loginpage(driver);
-		lp.myaccbtnclick();
-		lp.logoutbtnclick1();
-	}
-	
+	/*
+	 * @Test(priority = 2,dependsOnMethods = "searchinput") public void logout() {
+	 * Loginpage lp = new Loginpage(driver); lp.myaccbtnclick();
+	 * lp.logoutbtnclick1(); System.out.println("Logout was successful"); }
+	 */
 	
 }

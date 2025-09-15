@@ -23,7 +23,7 @@ public class Myaccpage extends Basepage {
 	
 	public void logoutbtnclick() {
 		wait.until(ExpectedConditions.visibilityOf(logoutbtn));
-		act.moveToElement(logoutbtn).perform();
+		act.moveToElement(logoutbtn).click().perform();
 		logoutbtn.click();
 	}
 	

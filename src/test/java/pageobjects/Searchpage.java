@@ -1,5 +1,6 @@
 package pageobjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -45,6 +46,9 @@ public class Searchpage extends Basepage{
 	}
 	
 	public void successmsgdisplay() {
+		/*if(wait.until(ExpectedConditions.presenceOfElementLocated((By) Addtocartsuccessmsg)).isDisplayed()) {
+			System.out.println("Product Successfully added to cart");
+		}*/
 		if(Addtocartsuccessmsg.isDisplayed()) {
 			System.out.println("Product Successfully added to cart");
 		}
