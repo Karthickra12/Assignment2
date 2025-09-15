@@ -1,6 +1,7 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -55,6 +56,7 @@ public class Searchpage extends Basepage{
 	}
 	
 	public void carttotalclick() {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", carttotalboxsymbol);
 		wait.until(ExpectedConditions.elementToBeClickable(carttotalboxsymbol));
 		act.moveToElement(carttotalboxsymbol).click().perform();
 		//carttotalboxsymbol.click();
@@ -69,6 +71,7 @@ public class Searchpage extends Basepage{
 	};
 	
 	public void checxkouttopclick() {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Topmenucheckout);
 		wait.until(ExpectedConditions.visibilityOf(Topmenucheckout));
 		wait.until(ExpectedConditions.elementToBeClickable(Topmenucheckout));
 		act.moveToElement(Topmenucheckout);
@@ -77,10 +80,12 @@ public class Searchpage extends Basepage{
 	}
 	
 	public void checkbtnclick() {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", homewizardcheckout);
 		homewizardcheckout.click();
 	}
 	
 	public void finalcheckoutclick() {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", checkoutfinalbtn);
 		checkoutfinalbtn.click();
 	}
 	

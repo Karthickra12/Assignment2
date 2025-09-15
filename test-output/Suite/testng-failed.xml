@@ -6,12 +6,14 @@
       <class name="testcases.Logouttests">
         <methods>
           <include name="logouttests"/>
+          <include name="openReport"/>
           <include name="Teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.Logouttests -->
       <class name="testcases.Registertests">
         <methods>
+          <include name="openReport"/>
           <include name="registertests"/>
           <include name="Teardown"/>
           <include name="setup"/>
@@ -19,16 +21,18 @@
       </class> <!-- testcases.Registertests -->
       <class name="testcases.Searchtests">
         <methods>
+          <include name="openReport"/>
           <include name="searchinput"/>
-          <include name="Teardown"/>
           <include name="setup"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- testcases.Searchtests -->
       <class name="testcases.logintests">
         <methods>
           <include name="logintest"/>
-          <include name="Teardown"/>
+          <include name="openReport"/>
           <include name="setup"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- testcases.logintests -->
     </classes>

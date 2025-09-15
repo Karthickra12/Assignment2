@@ -20,8 +20,8 @@ public class Loginpage extends Basepage {
 	@FindBy(xpath = "//input[@id = \"input-email\"]") WebElement loginmailinputfield;
 	@FindBy(xpath = "//input[@id = \"input-password\"]") WebElement loginpassinpuitfield;
 	@FindBy(xpath = "//input[@type = \"submit\"]") WebElement Loginbutton;
-	@FindBy(xpath = "//ul[@class = \"list-inline\"]//ul//li[5]/a") WebElement homelogoutbtn;
-	@FindBy(xpath = "//div[@class = \"buttons\"]//a") WebElement logoutcontinueclick;
+	@FindBy(xpath = "//ul[@class = 'list-inline']//ul//li[5]/a") WebElement homelogoutbtn;
+	@FindBy(xpath = "//div[@class = 'buttons']//a") WebElement logoutcontinueclick;
 	
 	public void myaccbtnclick() {
 		Myaccbtn.click();
